@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1 class="title">Solicitud de autorizaciones</h1>
+  <div class="button-group-1">
+    <button type="button" class="button-medkit buttons group-1" id="button-medkit">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="medkit-img icons">
+        <path d="M0 144v288C0 457.6 22.41 480 48
+            480H64V96H48C22.41 96 0 118.4 0 144zM464 96H448v384h16c25.59 0
+            48-22.41 48-48v-288C512 118.4 489.6 96 464 96zM384 48C384 22.41
+            361.6 0 336 0h-160C150.4 0 128 22.41 128
+            48V96H96v384h320V96h-32V48zM176 48h160V96h-160V48zM352 312C352 316.4
+            348.4 320 344 320H288v56c0 4.375-3.625 8-8 8h-48C227.6 384 224 380.4
+            224 376V320H168C163.6 320 160 316.4 160 312v-48C160 259.6 163.6 256
+            168 256H224V200C224 195.6 227.6 192 232 192h48C284.4 192 288 195.6
+            288 200V256h56C348.4 256 352 259.6 352 264V312z" />
+      </svg>
+      <p>Servicios programados</p>
+    </button>
+    <span class="button-interspace"></span>
+    <button type="button" class="button-hospital buttons group-1" id="button-hospital">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icons" viewBox="0 0 640
+            512">
+        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <path d="M192 48C192 21.49 213.5 0 240 0H400C426.5 0 448 21.49 448
+              48V512H368V432C368 405.5 346.5 384 320 384C293.5 384 272 405.5 272
+              432V512H192V48zM312 64C303.2 64 296 71.16 296 80V104H272C263.2 104
+              256 111.2 256 120V136C256 144.8 263.2 152 272 152H296V176C296
+              184.8 303.2 192 312 192H328C336.8 192 344 184.8 344
+              176V152H368C376.8 152 384 144.8 384 136V120C384 111.2 376.8 104
+              368 104H344V80C344 71.16 336.8 64 328 64H312zM160 96V512H48C21.49
+              512 0 490.5 0 464V320H80C88.84 320 96 312.8 96 304C96 295.2 88.84
+              288 80 288H0V224H80C88.84 224 96 216.8 96 208C96 199.2 88.84 192
+              80 192H0V144C0 117.5 21.49 96 48 96H160zM592 96C618.5 96 640 117.5
+              640 144V192H560C551.2 192 544 199.2 544 208C544 216.8 551.2 224
+              560 224H640V288H560C551.2 288 544 295.2 544 304C544 312.8 551.2
+              320 560 320H640V464C640 490.5 618.5 512 592 512H480V96H592z" />
+      </svg>
+      <p>Servicios hospitalarios</p>
+    </button>
+  </div>
+  <div class="button-group-2" id="button-group-2">
+    <button type="button" class="button-diagnosis buttons group-2" id="button-diagnosis">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icons" viewBox="0 0
+              384 512">
+        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <path d="M13.97 2.196C22.49-1.72 32.5-.3214 39.62 5.778L80 40.39L120.4
+                5.778C129.4-1.926 142.6-1.926 151.6 5.778L192 40.39L232.4
+                5.778C241.4-1.926 254.6-1.926 263.6 5.778L304 40.39L344.4
+                5.778C351.5-.3214 361.5-1.72 370 2.196C378.5 6.113 384 14.63 384
+                24V488C384 497.4 378.5 505.9 370 509.8C361.5 513.7 351.5 512.3
+                344.4 506.2L304 471.6L263.6 506.2C254.6 513.9 241.4 513.9 232.4
+                506.2L192 471.6L151.6 506.2C142.6 513.9 129.4 513.9 120.4
+                506.2L80 471.6L39.62 506.2C32.5 512.3 22.49 513.7 13.97
+                509.8C5.456 505.9 0 497.4 0 488V24C0 14.63 5.456 6.112 13.97
+                2.196V2.196zM96 144C87.16 144 80 151.2 80 160C80 168.8 87.16 176
+                96 176H288C296.8 176 304 168.8 304 160C304 151.2 296.8 144 288
+                144H96zM96 368H288C296.8 368 304 360.8 304 352C304 343.2 296.8
+                336 288 336H96C87.16 336 80 343.2 80 352C80 360.8 87.16 368 96
+                368zM96 240C87.16 240 80 247.2 80 256C80 264.8 87.16 272 96
+                272H288C296.8 272 304 264.8 304 256C304 247.2 296.8 240 288
+                240H96z" />
+      </svg>
+      <p>Ex&aacute;menes de diagn&oacute;stico</p>
+    </button>
+    <span class="button-interspace"></span>
+    <button type="button" class="button-procedure buttons group-2" id="button-procedure">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icons" viewBox="0 0
+                640 512">
+        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <path d="M96 318.3v1.689h1.689C97.12 319.4 96.56 318.9 96 318.3zM176
+                  320c44.13 0 80-35.88 80-79.1s-35.88-79.1-80-79.1S96 195.9 96
+                  240S131.9 320 176 320zM256 318.3C255.4 318.9 254.9 319.4 254.3
+                  320H256V318.3zM544 160h-82.1L450.7 183.9C441.5 203.2 421.8
+                  215.8 400 216c-21.23
+                  0-40.97-12.31-50.3-31.35l-12.08-24.64H304c-8.836 0-16 7.161-16
+                  15.1v175.1L64 352V80.01c0-8.834-7.164-15.1-16-15.1h-32c-8.836
+                  0-16 7.163-16 15.1V496C0 504.8 7.164 512 16 512h32C56.84 512
+                  64 504.8 64 496v-47.1h512V496c0 8.836 7.164 16 16 16h32c8.836
+                  0 16-7.164 16-16V256C640 202.1 597 160 544 160zM624
+                  48.01h-115.2l-24.88-37.31c-2.324-3.48-5.539-6.131-9.158-7.977c-1.172-.6016-2.486-.5508-3.738-.9512C468.8
+                  1.035 466.5 0 464.1 0c-.625 0-1.25 .0254-1.875 .0781c-8.625
+                  .6406-16.25 5.876-19.94 13.7l-42.72
+                  90.81l-21.12-43.12c-4.027-8.223-12.39-13.44-21.54-13.44L208
+                  48.02C199.2 48.01 192 55.18 192 64.02v15.99c0 8.836 7.163 15.1
+                  15.1 16l133.1 .0091l36.46 74.55C382.5 178.8 390.8 184 400
+                  184c9.219-.0781 17.78-5.438 21.72-13.78l45.91-97.52l8.406
+                  12.62C480.5 91.1 487.1 96.01 496 96.01h128c8.836 0 16-7.164
+                  16-16V64.01C640 55.18 632.8 48.01 624 48.01z" />
+      </svg>
+      <p>Procedimientos quir&uacute;rjicos</p>
+    </button>
+    <span class="button-interspace"></span>
+    <button type="button" class="button-other buttons group-2" id="button-other">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icons" viewBox="0
+                  0 576 512">
+        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <path d="M272 0C298.5 0 320 21.49 320 48V367.8C281.8 389.2 256 430
+                    256 476.9C256 489.8 259.6 501.8 265.9 512H48C21.49 512 0
+                    490.5 0 464V384H144C152.8 384 160 376.8 160 368C160 359.2
+                    152.8 352 144 352H0V288H144C152.8 288 160 280.8 160 272C160
+                    263.2 152.8 256 144 256H0V48C0 21.49 21.49 0 48 0H272zM152
+                    64C143.2 64 136 71.16 136 80V104H112C103.2 104 96 111.2 96
+                    120V136C96 144.8 103.2 152 112 152H136V176C136 184.8 143.2
+                    192 152 192H168C176.8 192 184 184.8 184 176V152H208C216.8
+                    152 224 144.8 224 136V120C224 111.2 216.8 104 208
+                    104H184V80C184 71.16 176.8 64 168 64H152zM512 272C512 316.2
+                    476.2 352 432 352C387.8 352 352 316.2 352 272C352 227.8
+                    387.8 192 432 192C476.2 192 512 227.8 512 272zM288 477.1C288
+                    425.7 329.7 384 381.1 384H482.9C534.3 384 576 425.7 576
+                    477.1C576 496.4 560.4 512 541.1 512H322.9C303.6 512 288
+                    496.4 288 477.1V477.1z" />
+      </svg>
+      <p>Otros servicios</p>
+    </button>
+  </div>
+  <div class="formulario-container">
+    <form action="" class="formulario unshow" id="formulario" enctype="multipart/form-data">
+      <div class="form-group-1" id="form-group-1">
+        <div class="row">
+          <div class="col">
+            <b><label for="inputEmail" class="form-label" id="labelEmail">Correo electr&oacute;nico del
+                paciente</label></b>
+            <input type="text" class="form-control inputEmail" placeholder="ejemplo@email.com" id="inputEmail"
+              name="email">
+          </div>
+          <div class="col">
+            <b><label for="inputSurname" class="form-label">Tel&eacute;fono celular del paciente</label></b>
+            <input type="text" class="form-control inputPhone" placeholder="3002222222" id="inputPhone" name="phone">
+          </div>
+        </div>
+      </div>
+      <div class="col form-city">
+        <b><label for="selectCity" class="form-label">Ciudad de prestaci&oacute;n de servicio</label></b>
+        <select class="form-select" id="selectCity">
+          <option selected>Seleccionar</option>
+          <option value="CAFAM">Bogot&aacute;</option>
+          <option value="Salud Total">Medell&iacute;n</option>
+        </select>
+      </div>
+      <div class="form-medical-history">
+        <b><label for="inputHistory" class="form-label" id="labelHistory">Resumen historia cl&iacute;nica</label></b>
+        <textarea class="form-control inputHistory"
+          placeholder="Ingresa una descripci&oacute;n de m&aacute;ximo 5000 caracteres" id="inputHistory"
+          rows="3"></textarea>
+      </div>
+      <div class="form-group-2" id="form-group-2">
+        <div class="row">
+          <div class="col">
+            <b><label for="input" class="form-label" id="labe">Tiempo de evoluci&oacute;n</label></b>
+            <select class="form-select" id="selectTime">
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+          </div>
+          <div class="col">
+            <b><label for="selectFormat" class="form-label labelFormat" id="labelFormat">Tiempo de evolución</label></b>
+            <select class="form-select" id="selectFormat">
+              <option value="Dia(s)">Dia(s)</option>
+              <option value="Mes">Mes</option>
+              <option value="Año">Año</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-medical-history-2">
+        <b><label for="inputHistory2" class="form-label" id="labelHistory2">Antecedentes m&eacute;dicos</label></b>
+        <textarea class="form-control inputHistory"
+          placeholder="Ingresa una descripci&oacute;n de m&aacute;ximo 300 caracteres" id="inputHistory2"
+          rows="3"></textarea>
+      </div>
+
+      <div class="form-group- col-12" id="form-group-3">
+        <div class="row">
+          <div class="input-group w-50 form-group col-6">
+            <label for="label-group-3-1" class="col-12 form-label">Procedimiento</label>
+            <input type="text" class="form-control" placeholder="Ingresa el c&oacute;digo o descripci&oacute;n CUPS"
+              aria-label="Input group example" aria-describedby="basic-addon1" id="label-group-3-1">
+            <span class="input-group-text" id="basic-addon1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-search searchIcon" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                </path>
+              </svg>
+            </span>
+          </div>
+          <div class="input-group w-50 form-group-3-1 col-6">
+            <label for="label-group-3-2" class="col-12 form-label">Diagn&oacute;stico m&eacute;dico</label>
+            <input type="text" class="form-control" placeholder="Ingresa el c&oacute;digo o descripci&oacute;n"
+              aria-label="Input group example" aria-describedby="basic-addon1" id="label-group-3-2">
+            <span class="input-group-text" id="basic-addon1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-search searchIcon" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                </path>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="Dateinput unshow" id="procedureInput">
+        <label for="inputDate" class="form-label">D&iacute;as de hospitalizaci&oacute;n</label>
+        <select class="form-select" id="selectTime">
+          <option selected>0</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+      </div>
+      <b><label class="form-label" for="check-group">Origen de la afecci&oacute;n</label></b>
+      <div class="check-group" id="check-group">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="Checkbox1" value="Cong&eacute;nito">
+          <label class="checkLabel" for="Checkbox1">Cong&eacute;nito</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="Checkbox2" value="Adquirido">
+          <label class="checkLabel" for="Checkbox2">Adquirido</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="Checkbox3" value="Trau&aacute;">
+          <label class="checkLabel" for="Checkbox3">Traum&aacute;tico</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="Checkbox4" value="Enfermedad o accidente laboral">
+          <label class="checkLabel" for="Checkbox4">Enfermedad o accidente laboral</label>
+        </div>
+      </div>
+      <div class="IPSinput">
+        <label for="inputIPS" class="form-label"><b>IPS o profesional de prestaci&oacute;n del servicio</b>(Aplica solo
+          para procedimientos)</label>
+        <input class="form-control" type="text" id="inputIPS">
+      </div>
+      <div class="Dateinput">
+        <label for="inputDate" class="form-label"><b>Fecha probable prestaci&oacute;n del servicio</b></label>
+        <input class="form-control" type="date" id="inputDate">
+      </div>
+
+      <div class="drag-input">
+        <p class="form-p">Adjuntar documentos<span class="form-p-2"> - Opcional</span></p>
+        <p class="form-p-1">Formatos: Formatos .pdf, .jpg, .zip <span class="form-p-3"> - Peso Máximo 5MB cada
+            uno</span></p>
+        <div class="row files" id="files1">
+          <div class="drag-area row" id="drag-area">
+            <div class="col-12 row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                class="bi bi-upload drag-upload" viewBox="0 0 16 16">
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                <path
+                  d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z" />
+              </svg>
+            </div>
+            <p class="drag-area-title">Haz click o arrastra aqui los documentos de orden m&eacute;dica, historia
+              cl&iacute;nica entre otros.</p>
+            <input type="file" id="input-file" name="files1" hidden multiple />
+          </div>
+          <br />
+          <ul class="fileList"></ul>
+        </div>
+        <div class="preview" id="preview">
+        </div>
+      </div>
+
+    </form>
+  </div>
+  <div class="button-group-3">
+    <button type="button" class="button-back">← ANTERIOR</button>
+    <span class="button-interspace-2"></span>
+    <button type="button" class="button-authorization">RADICAR
+      AUTORIZACI&Oacute;N →</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="buttons.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

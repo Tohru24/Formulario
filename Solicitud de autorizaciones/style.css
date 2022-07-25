@@ -1,0 +1,223 @@
+.button-group-1, .button-group-2{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-1{
+    width: 350px;
+}
+
+.group-2{
+    width: 225px;
+}
+
+.buttons{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:  #2e2e8c;
+    background-color:#fafafa;
+    
+    font-weight: bold;
+    border: 2px solid #e8e8e8;
+}
+
+.title{
+    color: #2e2e8c;
+    font-weight: 750;  
+    padding-bottom: 10px; 
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.icons{
+    color:#2e2e8c;
+    width:50px;
+    height:50px;
+    padding-bottom: 10px;
+}
+.button-interspace{
+    padding-left: 25px;
+}
+
+.button-interspace-2{
+    padding-left: 250px;
+}
+.button-group-3{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-back{
+    padding:5px 25px;
+    color: #f4a395;
+    border: 2px solid #f4a395;
+    background-color: white;
+}
+.button-authorization{
+    background-color: #00008f;
+    color: white;
+    padding:5px 25px;
+}
+
+.button-group-2{
+    opacity: 0;
+}
+.show{
+    opacity:1;
+}
+
+.selected{
+    background-color: white;
+    border:solid#00008f
+
+}
+.form-group-1{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.unshow{
+    display:none;
+}
+
+
+.form-label{
+    font-size: 14px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.form-city{
+    /* max-width: 32%; */
+    /* align-items: center; */
+    /* margin: auto; */
+}
+
+.form-medical-history, .form-medical-history-2{
+    /* max-width: 32%; */
+    /* align-items: center; */
+    /* margin: auto; */
+}
+
+.form-group-2{
+    /* max-width: 32%; */
+    /* align-items: center; */
+    /* margin: auto; */
+    margin: 0px !important;
+       
+}
+
+.form-group-2 label {
+    font-weight: bold;
+    margin-left: -10px;
+}
+
+.labelFormat{
+    opacity: 0;
+}
+
+.searchIcon{
+    color:white
+}
+
+.form-group-3{
+   
+}
+
+.check-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.formulario {
+    width: 100%;
+}
+
+.formulario-container{
+    width: 58%;
+    margin: auto;
+}
+
+.Dateinput{
+    width: 50%;
+}
+
+.drag-area{
+    border: 2px dashed #ddd;
+    height: 100px;
+    border-radius: 5px;
+    justify-content: center;
+    margin: auto;
+   
+}
+
+.drag-upload{
+    width:99%;
+    margin: auto;
+    padding-top: 10px;
+    color:#00008f;
+}
+
+.drag-area-title{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top:10px;
+}
+
+.drag-area.active{
+    background-color: #b8d4fe;
+    color: black;
+    border: 2px dashed;
+
+}
+
+.file-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px #ddd;
+}
+
+.status-text{
+    padding:0 10px;
+}
+
+.success{
+    color:#52ad5a;
+}
+
+.failure{
+    color:#ff0000;
+}
+
+.form-p{
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px;
+    
+}
+
+.form-p-2{
+    font-size: 18px;
+    color: grey;
+    padding-top: 10px;
+}
+
+
+
+.form-p-3{
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+
